@@ -16,11 +16,12 @@ $(document).ready(function () {
     }
 
     function calenderTracker(h) {
+        var currentHour = moment().hours();
         for (var c = 0; c < textAreaList.length; c++) {
             if (h == textAreaList[c].id) {
                 textAreaList[c].classList.remove("future");
                 textAreaList[c].classList.add("present");
-            } else if (currentHour > textAreaList[c].id) {
+            } else if (h > textAreaList[c].id) {
                 textAreaList[c].classList.remove("future");
                 textAreaList[c].classList.remove("present");
                 textAreaList[c].classList.add("past");
@@ -33,7 +34,9 @@ $(document).ready(function () {
     }
 
     function saveEvents(n) {
+        console.log("I'm clicked");
         var event = textAreaList[n].value.trim();
+        console.log(event);
         if (event.length < 1) {
             localStorage.setItem("event" + n, "");
         } else {
