@@ -21,7 +21,7 @@ $(document).ready(function () {
     }
 
     // clear button
-    $(`<button class="=btn btn-success clear"></button>`)
+    $(`<button class="=btn btn-secondary clear"></button>`)
         .text("Reset").appendTo(".clear");
 
     $(".clear").on("click", function (event) {

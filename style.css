@@ -4,9 +4,10 @@ body {
   font-family: 'Baloo Tammudu 2', cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 23px;
   width: 100vw;
   float: left;
+  background-color: whitesmoke;
 }
 
 textarea {
@@ -77,7 +78,7 @@ textarea {
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #5fc25f;
   color: white;
 }
 
@@ -85,13 +86,14 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #2fcfcf;
   color: white;
   border-top: 1px dashed #626262;
+  /* font-size: 21px; */
 }
 
 .saveBtn i:hover {
-  font-size: 24px;
+  /* font-size: 21px; */
   transition: all 0.3s ease-in-out;
 }
 
