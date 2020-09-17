@@ -14,74 +14,24 @@
 </head>
 
 <body>
+
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <h3 id="currentDay" class="time-block"></h3>
+    <!--current date display-->
+    <h3 id="currentDay" class="current-time"></h3>
+    <!--clear button-->
+    <br><div class="clear"></div>
   </header>
 
+  <!--time schedule goes here-->
   <div class="container">
-    <!-- Timeblocks go here -->
-    <!--9am row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>9 am</span></div>
-      <div class="col-md-8 activity future"><textarea id="9">Check emails</textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--10am row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>10 am</span></div>
-      <div class="col-md-8 activity future"><textarea id="10"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--11am row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>11 am</span></div>
-      <div class="col-md-8 activity future"><textarea id="11"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--12pm row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>12 pm</span></div>
-      <div class="col-md-8 activity future"><textarea id="12"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--1pm row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>1 pm</span></div>
-      <div class="col-md-8 activity future"><textarea id="13"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--2pm row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>2 pm</span></div>
-      <div class="col-md-8 activity future"><textarea id="14"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--3pm row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>3 pm</span></div>
-      <div class="col-md-8 activity future"><textarea id="15"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--4pm row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>4 pm</span></div>
-      <div class="col-md-8 activity future"><textarea id="16"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!--5pm row-->
-    <div class="row">
-      <div class="col-md-2 hour"><span>5 pm</span></div>
-      <div class="col-md-8 activity future"><textarea id="17"></textarea></div>
-      <div class="col-md-2 saveBtn"><span><i class="far fa-save"></i>Save</span></div>
-    </div>
-    <!-- Timeblocks end here -->
+    <div class="col-12 row"></div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="schedule.js"></script>
+  <script src="script.js"></script>
   <script>
     console.log(moment());
   </script>
